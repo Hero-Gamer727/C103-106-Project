@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Networks App</title>
+</head>
+<body>
+    <center>
+    <div class="container">
+    <h1 class="btn btn-default" style="width: 80%; font-size: 30px;"> Image Recognition Using Neural Networks</h1>
+    <br><br>
+  
+   <h2 class="text-capitalize"> this model is trained to identify the following people</h2>
+  <hr><br>
+<h3 class="classes">My Dad</h3>
+<hr>
+<br><br>
+
+<h3 class="classes">My Mom</h3>
+<hr>
+<br><br>
+
+<h3 class="classes">My Sister</h3>
+<hr>
+<br><br>
+
+<h3 class="classes">Myself</h3>
+<hr>
+<br><br>
+
+<h3 class="btn btn-primary" style="margin: 20px; font-size: 30px;"> Webcam View:</h3>
+<br>
+<div style="border:6px ridge steelblue; height: 600px; width:800px" id="camera"></div>
+
+<div style="border:6px ridge steelblue; height: 500px; width:700px; margin: 30px" id="result"></div>
+
+
+<button class="btn btn-warning" onclick="takescreenshot()" id="capture_button"> Capture Image</button>
+<br><br>
+<button class="btn btn-info" onclick="check()" id="identify_image_button"> Identify Image</button>
+<br>
+<label>Object: <span id="object_name"></span></label>
+<br>
+<label>Accuracy: <span id="accuracy_number"></span></label>
+
+</span>
+</div>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
